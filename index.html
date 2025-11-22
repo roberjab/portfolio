@@ -17,6 +17,7 @@
 <li><a href="about.html">About</a></li>
 </ul>
 </nav>
+<button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
 </header>
 
 
@@ -53,5 +54,10 @@
 <footer>
 <p>© 2025 Jabriel R. — Hosted on GitHub Pages</p>
 </footer>
+<script>
+function toggleTheme() {
+document.body.classList.toggle('light');
+}
+</script>
 </body>
 </html>
