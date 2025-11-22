@@ -2,7 +2,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Jabriel Roberts | Cybersecurity Portfolio</title>
+<title>J. Roberts | Cybersecurity Portfolio</title>
 <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -10,7 +10,7 @@
 <body>
 <header>
 <nav>
-<h1 class="logo">Jabriel R.</h1>
+<h1 class="logo">J. Roberts</h1>
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="projects.html">Projects</a></li>
@@ -24,34 +24,55 @@
 <section class="hero">
 <h2>Cybersecurity Practitioner</h2>
 <p>Threat Detection • Cloud Security • DevOps Engineering • Capture the Flag</p>
+<a href="Jabriel-Resume.pdf" class="btn">Download Resume</a>
 </section>
 
 
 <section class="section">
-<h2>Featured Projects</h2>
-<div class="project-grid">
-<a href="projects.html#breach-beach" class="project-card">
-<h3>Breach Beach AWS Cyber Range</h3>
-<p>Cloud security, VPC design, IAM hardening, DevOps automation.</p>
-</a>
-
-
-<a href="projects.html#ctf" class="project-card">
-<h3>Bloomberg Capture The Flag</h3>
-<p>Reverse engineering, forensics, OSINT, and exploitation challenges.</p>
-</a>
-
-
-<a href="projects.html#tkh" class="project-card">
-<h3>The Knowledge House Innovation Fellowship</h3>
-<p>Cybersecurity training, secure networking, SOC analysis, Python scripting.</p>
-</a>
+<div class="terminal-intro">
+<pre id="terminal-text"></pre>
 </div>
+
+
+<div class="photo-entry">
+<img src="your-photo.jpg" alt="Profile Photo" class="profile-photo" />
+</div>
+
+
+<h2>Who I Am</h2>
+<p>I am a cybersecurity practitioner with hands-on experience in AWS cloud security, threat detection, DevOps workflows, and CTF problem solving.</p>
+
+
+<h2>Skills</h2>
+<ul>
+<li>Cloud Security (AWS)</li>
+<li>DevOps & Infrastructure as Code</li>
+<li>Threat Detection / SIEM</li>
+<li>Python Scripting</li>
+<li>Network Defense</li>
+<li>Capture The Flag Challenges</li>
+</ul>
 </section>
 
 
+<script>
+const terminalText = `Initializing system...
+Loading profile...
+Access Granted: Welcome, Jabriel.`;
+let i = 0;
+function typeTerminal() {
+if (i < terminalText.length) {
+document.getElementById("terminal-text").innerText += terminalText.charAt(i);
+i++;
+setTimeout(typeTerminal, 50);
+}
+}
+window.onload = typeTerminal;
+</script>
+
+
 <footer>
-<p>© 2025 Jabriel R. — Hosted on GitHub Pages</p>
+<p>© 2025 J. Roberts — Hosted on GitHub Pages</p>
 </footer>
 <script>
 function toggleTheme() {
